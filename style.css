@@ -28,6 +28,18 @@ body {
     padding: 40px;
 }
 
+table {
+    width: 100%;
+}
+
+th, .left {
+    text-align: left;
+}
+
+th, .right {
+    text-align: right;
+}
+
 h2 {
     font-size: small;
     font-weight: 400;
