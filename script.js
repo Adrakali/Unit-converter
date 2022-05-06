@@ -1,5 +1,8 @@
 const btns = document.querySelector(".btns")
+const taskList = document.querySelector(".task-list")
+const priceList = document.querySelector(".price-list")
 const addTask = document.querySelector(".tasks")
+
 
 const tasks = [
     {task: "Wash Car",  price:  10},
@@ -9,12 +12,14 @@ const tasks = [
 
 
 
+
 btns.addEventListener('click', (e) => {
     let btn = document.querySelector('light-btn')
     for ( let i = 0; i < tasks.length; i++){
-        if(e.target.textContent.includes(tasks[i].task)){
-            addTask.innerHTML += tasks[i].task
-            console.log(tasks[i].price)
+        if(e.target.textContent.includes(tasks[i].task)){ 
+            const li = document.createElement('li')
+            li.textContent = `${tasks[i].task}, ${tasks[i].price}` 
+            taskList.append(li)
         }
     }
 });
