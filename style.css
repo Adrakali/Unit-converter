@@ -1,94 +1,103 @@
 :root {
-    --primary-clr: #1F2937;
-    --secondary-clr: #3A69D2;
-    --background-clr: #1C1C1C;
-    --neutral-clr: #D1D4F4;
+	--primary-clr: #1f2937;
+	--secondary-clr: #3a69d2;
+	--background-clr: #1c1c1c;
+	--neutral-clr: #d1d4f4;
 }
 
 body {
-    background-color: var(--background-clr);
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	background-color: var(--background-clr);
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .container {
-    background-color: var(--primary-clr);
+	background-color: var(--primary-clr);
 }
 
 .header {
-    background-color: var(--secondary-clr);
-    padding: 20px;
-    text-align: center;
+	background-color: var(--secondary-clr);
+	padding: 20px;
+	text-align: center;
 }
 
 .content {
-    padding: 40px;
+	padding: 40px;
 }
 
 table {
-    width: 100%;
+	width: 100%;
 }
 
-th, .left {
-    text-align: left;
+th,
+.left {
+	text-align: left;
 }
 
-th, .right {
-    text-align: right;
+th,
+.right {
+	text-align: right;
 }
 
 h2 {
-    font-size: small;
-    font-weight: 400;
+	font-size: small;
+	font-weight: 400;
 }
 
 p {
-    font-size: small;
+	font-size: small;
 }
 
-.light-btn {
-    background-color: var(--neutral-clr);
-    color: var(--primary-clr);
-    border: none;
-    padding: 8 16;
-    outline: none;
-    border-radius: 4px;
-    margin-bottom: 40px;
+.fa-trash-can {
+	margin-left: 8px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.item-btn {
+	background-color: var(--neutral-clr);
+	color: var(--primary-clr);
+	border: none;
+	padding: 8 16;
+	outline: none;
+	border-radius: 4px;
+	margin-bottom: 40px;
 }
 
 .send-invoice {
-    width: 100%;
-    padding: 8;
-    border-radius: 4px;
-    border: none;
-    background-color: var(--secondary-clr);
-    color: white;
-    margin-top: 40px;
+	width: 100%;
+	padding: 8;
+	border-radius: 4px;
+	border: none;
+	background-color: var(--secondary-clr);
+	color: white;
+	margin-top: 40px;
 }
 
-.summary-wrapper, .tasks-wrapper {
-    display: flex;
-    justify-content: space-between;
+.summary-wrapper,
+.tasks-wrapper {
+	display: flex;
+	justify-content: space-between;
 }
 
 .tasks-total {
-    text-align: right;
+	text-align: right;
 }
 
 .total-amount {
-    font-size: x-large;
-    font-weight: 700;
+	font-size: x-large;
+	font-weight: 700;
 }
 
 .task-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .fa-envelope {
-    margin-right: 8px;
+	margin-right: 8px;
 }
