@@ -44,5 +44,4 @@ function renderItem(currentItem, currentPrice) {
 //UPDATE TOTAL =====
 function updateTotal(itemValue) {
 	totalElement.textContent = `$ ${(sum += itemValue)}`;
-	console.log(typeof sum);
 }
